@@ -142,30 +142,54 @@ body{
     color:var(--black);
 }
 
-.form{
+.login{
 
-    display:flex;
-    flex-direction:column;
-    gap:1.5rem;
+    margin-bottom:2rem;
 }
 
-.checkbox__container{
+.login__title{
 
-    display:flex;
-    align-items:center;
-    gap:1rem;
-    font-size:1.2rem;
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:3rem;
     color:var(--black);
 }
 
-.checkbox__container input{
+.additional__signup{
 
-    width:25px;
-    height:25px;
-    accent-color:var(--red);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1rem;
 }
 
-.form__input{
+.nav__link{
+
+    color:var(--red);
+    text-decoration:none;
+    font-size:1rem;
+    transition:0.3s;
+}
+
+.nav__link:hover{
+
+    color:var(--black);
+}
+
+.forgot__link{
+
+    color:var(--dark-gray);
+    text-decoration:none;
+    font-size:0.95rem;
+    transition:0.3s;
+}
+
+.forgot__link:hover{
+
+    color:var(--red);
+}
+
+.signup{
 
     width:100%;
     padding:1rem;
@@ -182,45 +206,46 @@ body{
 
 .form__input::placeholder{
 
-    color:var(--light-gray);
+    color:gray;
 }
 
 .button{
 
-    background:var(--red);
-    color:var(--white);
-
-    border:none;
-    padding:1rem;
-    border-radius:12px;
-
-    font-size:1.2rem;
-    cursor:pointer;
-
-    transition:0.3s;
+    width:100%;
 }
 
-.button:hover{
+.recover{
 
-    background:var(--black);
+    width:100%;
 }
 
-@media(min-width:768px){
+.recover__title{
 
-    .company__name{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:3rem;
+    color:var(--black);
+}
 
-        font-size:2.5rem;
-    }
+.recover__text{
 
-    .search__title{
+    font-size:1rem;
+    color:var(--dark-gray);
+    line-height:1.6;
+    text-align:center;
+}
 
-        font-size:2.5rem;
-    }
+.signup{
 
-    .form__input{
+    width:100%;
+}
 
-        font-size:1.1rem;
-    }
+.signup__title{
+
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:3rem;
+    color:var(--black);
 }
 
 .dashboard{
