@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="./index/styles.css">
+</head>
+
+<body>
+
+    <main class = "main__content">
+        <header class = "header">
+            <div class = "header__content">
+                <div class = "logo__container">
+                    <img 
+                        src="/" 
+                        alt="logo">
+                </div>
+                <div class = "company__info">
+                    <h1 class = "company__name">
+                        Poke FLIGHTS
+                    </h1>
+                    <h3 class = "company__slogan">
+                        Flying to your dreams
+                    </h3>
+                </div>
+            </div>
+        </header>
+
+        <div class = "main__body">
+            <section class = "login">
+                <h1 class = "login__title">
+                    Log in
+                </h1>
+                <div class = "form__body">
+                    <form 
+                        autocomplete = "off" 
+                        class = "form">
+                        <input 
+                            type = "text" 
+                            name = "name" 
+                            placeholder = "Enter your name" 
+                            required 
+                            class = "form__input">
+                        <input 
+                            type = "password" 
+                            name = "password" 
+                            placeholder = "Password" 
+                            required 
+                            class = "form__input">
+
+                        <div class = "checkbox__container">
+                            <input 
+                                type = "checkbox" 
+                                name = "remember_me" 
+                                value = "remember_me"
+                                id = "remember">
+                            <label for = "remember">
+                                Remember me
+                            </label>
+                        </div>
+                        <button 
+                            type = "submit" 
+                            class = "button">
+                            Sign in
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <section class = "additional__signup">
+
+                <h4 class = "signup__title">
+                    <a 
+                        href = "signup.html" 
+                        class = "nav__link">
+                        Create New Account
+                    </a>
+                </h4>
+
+                <h4 class = "forgot__title">
+                    <a 
+                        href = "forgot_password.html" 
+                        class = "forgot__link">
+                        Did you forget your password?
+                    </a>
+                </h4>
+            </section>
+
+        </div>
+    </main>
+</body>
+</html>
