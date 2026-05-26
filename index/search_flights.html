@@ -1,60 +1,128 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
-  <meta charset = "UTF-8">
-  <meta name="viewport" content= "width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
-  <link rel="stylesheet" href="./index/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke Flights</title>
+   
+    <link rel="stylesheet" href="./formating/layout.css">
+    <link rel="stylesheet" href="./formating/forms.css">
+    <link rel="stylesheet" href="./formating/responsive.css">
+    <link rel="stylesheet" href="./formating/styles.css">
+
+
+
 </head>
-<body class = "body">
+
+<body>
+
     <main class="main__content">
-    <header class = "header">
-        <div class="container">
-            <div class="card__image">
-                <img src="/">
-            </div>
-            <div>    
-                <h1 class = "company__name">Poke FLIGHTS</h1>
-            </div>
-            <div>
-                <h3 class = "company__slogan"> Flying to your dreams</h3>
-            </div>
-        </div>
-    </header>
 
-    <section>
-        <div class="container__2">
-            <div class="logincard__image">
-                <img src="/">
-            </div>
-            <div>    
-                <h3 class = "user__name">Stefanny Estevez</h3>
-            </div>
-            <div>
-                <h4 class = "log__out"><a href="signup.html" class="logout__link">Log out</a></h4>
-            </div>
-        </div>
-    </section>
+        <header class="header">
+            <div class="header__content">
 
+                <div class="logo__container">
+                    <img 
+                        src="./images/pokeball.svg" 
+                        alt="logo">
+                </div>
 
-    <section>
-        <h1 class="login__title">Flight Search</h1>
-        <div class = "form__body">
-            <form autocomplete = "off" class = "form">
-                <input type="checkbox" name="oneway" value="oneway" class="check__oneway><p class = "check__oneway">One-way</p>
-                <br>
-                <input type = "text" name = "origin" placeholder= "Origin" required class="form__input">
-                <br>
-                <input type="text" name= "destiny" placeholder="Destiny" required class="form__input">
-                <br>
-                <input type="text" placeholder="Departure date" class="form__input">
-                <br>
-                <input type="text" placeholder="Return date" class="form__input">
-                <br>
-                <input type="submit" value="Search" class="botton">
-            </form>
+                <div class="company__info">
+                    <h1 class="company__name">
+                        POKE FLIGHTS
+                    </h1>
+
+                    <p class="company__slogan">
+                        Flying to your dreams
+                    </p>
+                </div>
+
+            </div>
+        </header>
+
+        <div class="main__body">
+
+            <section class="profile">
+
+                <div class="profile__image">
+                    <img 
+                        src="./images/trainer.svg" 
+                        alt="user">
+                </div>
+
+                <div class="profile__info">
+                    <h2 class="user__name">
+                        Stefanny Estevez
+                    </h2>
+
+                    <a 
+                        href="signup.html"
+                        class="logout__link">
+                        Log out
+                    </a>
+                </div>
+
+            </section>
+
+            <hr class="divider">
+
+            <section class="search">
+
+                <h1 class="search__title">
+                    Flight Search
+                </h1>
+
+                <form 
+                    class="form"
+                    autocomplete="off">
+
+                    <div class="checkbox__container">
+
+                        <input 
+                            type="checkbox"
+                            id="oneway">
+
+                        <label for="oneway">
+                            One-way
+                        </label>
+
+                    </div>
+
+                    <input
+                        type="text"
+                        placeholder="Origin"
+                        class="form__input"
+                        required>
+
+                    <input
+                        type="text"
+                        placeholder="Destination"
+                        class="form__input"
+                        required>
+
+                    <input
+                        type="date"
+                        class="form__input"
+                        required>
+
+                    <input
+                        type="date"
+                        class="form__input"
+                        required>
+
+                    <button 
+                        type="submit"
+                        class="button">
+                        SEARCH
+                    </button>
+
+                </form>
+
+            </section>
+
         </div>
-    </section>
+
     </main>
+
 </body>
 </html>
