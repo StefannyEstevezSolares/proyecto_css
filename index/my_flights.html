@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>My Flights</title>
+    <link rel="stylesheet" href="./formating/layout.css">
+    <link rel="stylesheet" href="./formating/forms.css">
+    <link rel="stylesheet" href="./formating/responsive.css">
+    <link rel="stylesheet" href="./formating/styles.css"></head>
+
+<body>
+
+    <main class = "main__content">
+        <header class = "header">
+            <div class = "header__content">
+                <div class = "logo__container">
+                    <img 
+                        src = "./images/logo.png" 
+                        alt = "logo">
+                </div>
+
+                <div class = "company__info">
+                    <h1 class = "company__name">
+                        Poke FLIGHTS
+                    </h1>
+                    <h3 class = "company__slogan">
+                        Flying to your dreams
+                    </h3>
+                </div>
+            </div>
+        </header>
+
+
+        <div class = "main__body">
+            <section class = "profile">
+                <div class = "profile__image">
+                    <img 
+                        src = "./images/user.png" 
+                        alt = "user">
+                </div>
+                <div class = "profile__info">
+                    <h2 class = "user__name">
+                        John Doe
+                    </h2>
+                    <a 
+                        href = "login.html"
+                        class = "logout__link">
+                        Log out
+                    </a>
+                </div>
+            </section>
+
+
+            <hr class = "divider">
+            <section class = "myflights">
+
+                <h1 class = "myflights__title">
+                    My Flights
+                </h1>
+                <section class = "flights__list">
+                    <article class = "flight__card">
+                        <div class = "flight__left">
+                            <div class = "flight__image">
+                                <img 
+                                    src = "./images/plane.png" 
+                                    alt = "plane">
+                            </div>
+                            
+                            
+                            <div class = "flight__schedule">
+                                <p class = "flight__time">
+                                    05:30 - 06:30
+                                </p>
+                                <p class = "flight__duration">
+                                    1h 30 min
+                                </p>
+                                <p class = "flight__date">
+                                    Sep 29
+                                </p>
+                            </div>
+                        </div>
+                        <div class = "flight__right">
+                            <p class = "flight__code">
+                                VAA025
+                            </p>
+                            <p class = "flight__status">
+                                ON TIME
+                            </p>
+                            <p class = "flight__route">
+                                Bogotá - Barranquilla
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class = "flight__card">
+                        <div class = "flight__left">
+                            <div class = "flight__image">
+                                <img 
+                                    src = "./images/plane.png" 
+                                    alt = "plane">
+                            </div>
+                            <div class = "flight__schedule">
+                                <p class = "flight__time">
+                                    10:30 - 12:00
+                                </p>
+                                <p class = "flight__duration">
+                                    1h 30 min
+                                </p>
+                                <p class = "flight__date">
+                                    Jul 05
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class = "flight__right">
+                            <p class = "flight__code">
+                                VAA185
+                            </p>
+                            <p class = "flight__status">
+                                LANDED
+                            </p>
+                            <p class = "flight__route">
+                                Bogotá - Barranquilla
+                            </p>
+                        </div>
+                    </article>
+                    <article class = "flight__card">
+                        <div class = "flight__left">
+                            <div class = "flight__image">
+                                <img 
+                                    src = "./images/plane.png" 
+                                    alt = "plane">
+                            </div>
+                            <div class = "flight__schedule">
+
+                                <p class = "flight__time">
+                                    05:30 - 06:30
+                                </p>
+                                <p class = "flight__duration">
+                                    1h 30 min
+                                </p>
+                                <p class = "flight__date">
+                                    Feb 04
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class = "flight__right">
+                            <p class = "flight__code">
+                                VAA800
+                            </p>
+                            <p class = "flight__status">
+                                LANDED
+                            </p>
+                            <p class = "flight__route">
+                                Bogotá - Barranquilla
+                            </p>
+                        </div>
+                    </article>
+                </section>
+
+                <button class = "button">
+                    BACK
+                </button>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

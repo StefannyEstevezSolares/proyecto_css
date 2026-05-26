@@ -452,7 +452,42 @@ body{
 .checkin__subtitle{
 
     font-size:1.3rem;
-    color:var(--drak-gray);
+    color:var(--dark-gray);
     margin-bottom:3rem;
     text-align: center;
 }
+
+.myflights{
+
+    width:100%;
+}
+
+.myflights__title{
+
+    text-align:center;
+    font-size:2rem;
+    color:var(--black);
+
+    margin-bottom:2rem;
+}
+
+.flight__status{
+
+    font-size:1.8rem;
+    color:var(--dark-gray);
+
+    margin-bottom:0.5rem;
+}
+
+.flight__date{
+
+    font-size:1rem;
+    color:var(--dark-gray);
+}
+
+.flight__route{
+
+    font-size:1rem;
+    color:var(--dark-gray);
+}
+
