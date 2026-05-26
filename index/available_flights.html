@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Available Flights</title>
+    <link rel="stylesheet" href="./formating/layout.css">
+    <link rel="stylesheet" href="./formating/forms.css">
+    <link rel="stylesheet" href="./formating/responsive.css">
+    <link rel="stylesheet" href="./formating/styles.css">
+</head>
+
+<body>
+    <main class = "main__content">
+      
+        <header class = "header">
+            <div class = "header__content">
+                <div class = "logo__container">
+                    <img 
+                        src = "./images/logo.png" 
+                        alt = "logo">
+                </div>
+                <div class = "company__info">
+                    <h1 class = "company__name">
+                        Poke FLIGHTS
+                    </h1>
+                    <h3 class = "company__slogan">
+                        Flying to your dreams
+                    </h3>
+                </div>
+            </div>
+        </header>
+
+        <div class = "main__body">
+            <section class = "profile">
+                <div class = "profile__image">
+                    <img 
+                        src = "./images/trainer.svg" 
+                        alt = "user">
+                </div>
+                <div class = "profile__info">
+                    <h2 class = "user__name">
+                        John Doe
+                    </h2>
+                    <a 
+                        href = "login.html"
+                        class = "logout__link">
+                        Log out
+                    </a>
+                </div>
+
+
+            </section>
+            <hr class = "divider">
+            <section class = "flights">
+                <h1 class = "flights__title">
+                    Available Flights
+                </h1>
+                <div class = "flight__details">
+                    <p class = "flight__route">
+                        Bogotá - Barranquilla
+                    </p>
+                    <p class = "flight__date">
+                        September - 29
+                    </p>
+                </div>
+                <section class = "flights__list">
+                    <article class = "flight__card">
+                        <div class = "flight__left">
+                            <div class = "flight__image">
+                                <img 
+                                    src = "./images/plane.png" 
+                                    alt = "plane">
+                            </div>
+                            <div class = "flight__schedule">
+                                <p class = "flight__time">
+                                    05:30 - 06:30
+                                </p>
+                                <p class = "flight__duration">
+                                    1h 30 min
+                                </p>
+                            </div>
+                        </div>
+                        <div class = "flight__right">
+                            <p class = "flight__code">
+                                VAA025
+                            </p>
+                            <p class = "flight__price">
+                                COP 150.600
+                            </p>
+                        </div>
+
+                    </article>
+                    <article class = "flight__card">
+                        <div class = "flight__left">
+                            <div class = "flight__image">
+                                <img 
+                                    src = "./images/plane.png" 
+                                    alt = "plane">
+                            </div>
+                            <div class = "flight__schedule">
+                                <p class = "flight__time">
+                                    10:30 - 12:05
+                                </p>
+
+                                <p class = "flight__duration">
+                                    1h 30 min
+                                </p>
+                            </div>
+                        </div>
+                        <div class = "flight__right">
+                            <p class = "flight__code">
+                                VAA412
+                            </p>
+
+                            <p class = "flight__price">
+                                COP 260.050
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class = "flight__card">
+                        <div class = "flight__left">
+                            <div class = "flight__image">
+                                <img 
+                                    src = "./images/plane.png" 
+                                    alt = "plane">
+                            </div>
+                            <div class = "flight__schedule">
+                                <p class = "flight__time">
+                                    14:15 - 15:45
+                                </p>
+                                <p class = "flight__duration">
+                                    1h 30 min
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class = "flight__right">
+                            <p class = "flight__code">
+                                VAA836
+                            </p>
+                            <p class = "flight__price">
+                                COP 150.600
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <button class = "button">
+                    BACK
+                </button>
+            </section>
+        </div>
+    </main>
+
+</body>
+</html>
