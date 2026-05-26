@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Check In</title>
+    <link rel = "stylesheet" href = "./index/styles.css">
+    <link rel="stylesheet" href="./formating/layout.css">
+    <link rel="stylesheet" href="./formating/forms.css">
+    <link rel="stylesheet" href="./formating/responsive.css">
+    <link rel="stylesheet" href="./formating/styles.css">
+</head>
+
+<body>
+    <main class = "main__content">
+        <header class = "header">
+            <div class = "header__content">
+                <div class = "logo__container">
+                    <img 
+                        src = "./images/pokeball.svg" 
+                        alt = "logo">
+                </div>
+                <div class = "company__info">
+                    <h1 class = "company__name">
+                        Poke FLIGHTS
+                    </h1>
+                    <h3 class = "company__slogan">
+                        Flying to your dreams
+                    </h3>
+                </div>
+            </div>
+        </header>
+
+
+        <div class = "main__body">
+            <section class = "profile">
+                <div class = "profile__image">
+                    <img 
+                        src = "./images/trainer.svg" 
+                        alt = "user">
+                </div>
+                <div class = "profile__info">
+                    <h2 class = "user__name">
+                        John Doe
+                    </h2>
+                    <a 
+                        href = "login.html"
+                        class = "logout__link">
+                        Log out
+                    </a>
+                </div>
+            </section>
+
+            <hr class = "divider">
+            
+            <section class = "checkin">
+                <h1 class = "checkin__title">
+                    Check In
+                </h1>
+                <article class = "flight__card">
+                    <div class = "flight__left">
+                        <div class = "flight__image">
+                            <img 
+                                src = "./images/plane.png" 
+                                alt = "plane">
+                        </div>
+                        <div class = "flight__schedule">
+                            <p class = "flight__time">
+                                05:30 - 06:30
+                            </p>
+                            <p class = "flight__duration">
+                                1h 30 min
+                            </p>
+                            <p class = "flight__route">
+                                Bogotá - Barranquilla
+                            </p>
+                        </div>
+                    </div>
+                    <div class = "flight__right">
+
+                        <p class = "flight__price">
+                            VAA025
+                        </p>
+                    </div>
+                </article>
+                <section class = "checkin__form">
+                    <h2 class = "checkin__subtitle">
+                        Emergency Contact
+                    </h2>
+                    <form 
+                        class = "form"
+                        autocomplete = "off">
+                        <input 
+                            type = "text"
+                            placeholder = "Full name"
+                            class = "form__input"
+                            required>
+                        <input 
+                            type = "tel"
+                            placeholder = "Cellphone number"
+                            class = "form__input"
+                            required>
+                        <button 
+                            type = "submit"
+                            class = "button">
+                            SAVE
+                        </button>
+
+                    </form>
+                </section>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
