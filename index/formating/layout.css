@@ -142,54 +142,30 @@ body{
     color:var(--black);
 }
 
-.login{
-
-    margin-bottom:2rem;
-}
-
-.login__title{
-
-    text-align:center;
-    font-size:2rem;
-    margin-bottom:3rem;
-    color:var(--black);
-}
-
-.additional__signup{
+.form{
 
     display:flex;
     flex-direction:column;
+    gap:1.5rem;
+}
+
+.checkbox__container{
+
+    display:flex;
     align-items:center;
     gap:1rem;
-}
-
-.nav__link{
-
-    color:var(--red);
-    text-decoration:none;
-    font-size:1rem;
-    transition:0.3s;
-}
-
-.nav__link:hover{
-
+    font-size:1.2rem;
     color:var(--black);
 }
 
-.forgot__link{
+.checkbox__container input{
 
-    color:var(--dark-gray);
-    text-decoration:none;
-    font-size:0.95rem;
-    transition:0.3s;
+    width:25px;
+    height:25px;
+    accent-color:var(--red);
 }
 
-.forgot__link:hover{
-
-    color:var(--red);
-}
-
-.signup{
+.form__input{
 
     width:100%;
     padding:1rem;
@@ -206,46 +182,45 @@ body{
 
 .form__input::placeholder{
 
-    color:gray;
+    color:var(--light-gray);
 }
 
 .button{
 
-    width:100%;
+    background:var(--red);
+    color:var(--white);
+
+    border:none;
+    padding:1rem;
+    border-radius:12px;
+
+    font-size:1.2rem;
+    cursor:pointer;
+
+    transition:0.3s;
 }
 
-.recover{
+.button:hover{
 
-    width:100%;
+    background:var(--black);
 }
 
-.recover__title{
+@media(min-width:768px){
 
-    text-align:center;
-    font-size:2rem;
-    margin-bottom:3rem;
-    color:var(--black);
-}
+    .company__name{
 
-.recover__text{
+        font-size:2.5rem;
+    }
 
-    font-size:1rem;
-    color:var(--dark-gray);
-    line-height:1.6;
-    text-align:center;
-}
+    .search__title{
 
-.signup{
+        font-size:2.5rem;
+    }
 
-    width:100%;
-}
+    .form__input{
 
-.signup__title{
-
-    text-align:center;
-    font-size:2rem;
-    margin-bottom:3rem;
-    color:var(--black);
+        font-size:1.1rem;
+    }
 }
 
 .dashboard{
