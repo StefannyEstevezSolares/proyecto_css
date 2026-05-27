@@ -22,24 +22,22 @@ body{
 
     background:var(--dark-gray);
     min-height:100vh;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    padding:2rem 1rem;
 }
 
 .main__content{
 
     width:100%;
-    max-width:700px;
+    min-height:100vh;
+
     background:var(--white);
-    border-radius:30px;
-    overflow:hidden;
+
+    display:flex;
+    flex-direction:column;
 }
 
 .header{
+
+    width:100%;
 
     background:
     radial-gradient(
@@ -54,6 +52,8 @@ body{
 
 .header__content{
 
+    width:100%;
+
     display:flex;
     align-items:center;
     gap:1rem;
@@ -62,6 +62,7 @@ body{
 .logo__container{
 
     width:90px;
+    flex-shrink:0;
 }
 
 .logo__container img{
@@ -72,11 +73,18 @@ body{
     filter: brightness(150);
 }
 
+.company__info{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
 
 .company__name{
 
     color:var(--white);
     font-size:2rem;
+
     text-shadow:3px 4px 4px black;
 }
 
@@ -88,14 +96,37 @@ body{
 
 .main__body{
 
+    width:100%;
+
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
     padding:2rem 1.5rem;
+}
+
+.login,
+.signup,
+.recover,
+.search,
+.dashboard,
+.flights,
+.checkin,
+.myflights{
+
+    width:100%;
 }
 
 .profile{
 
+    width:100%;
+
     display:flex;
     align-items:center;
     gap:1rem;
+
     margin-bottom:2rem;
 }
 
@@ -106,12 +137,14 @@ body{
     border-radius:50%;
     overflow:hidden;
     border:2px solid var(--light-gray);
+    flex-shrink:0;
 }
 
 .profile__image img{
 
     width:100%;
     height:100%;
+
     object-fit:cover;
     display:block;
 }
@@ -126,54 +159,70 @@ body{
 
     color:var(--red);
     font-size:1rem;
+
     text-decoration:none;
 }
 
 .divider{
 
+    width:100%;
+
     margin-bottom:3rem;
+
     border:none;
     border-top:1px solid var(--light-gray);
 }
 
-.search__title{
+.search__title,
+.dashboard__title,
+.flights__title,
+.myflights__title,
+.checkin__title,
+.signup__title,
+.recover__title,
+.login__title{
 
     text-align:center;
     font-size:2rem;
+
     margin-bottom:3rem;
+
     color:var(--black);
+}
+
+.dashboard__subtitle{
+
+    text-align:center;
+
+    font-size:1.3rem;
+    font-weight:normal;
+
+    color:var(--dark-gray);
+
+    margin-bottom:1rem;
 }
 
 .form{
 
+    width:100%;
+
     display:flex;
     flex-direction:column;
-    gap:1.5rem;
-}
-
-.checkbox__container{
-
-    display:flex;
     align-items:center;
-    gap:1rem;
-    font-size:1.2rem;
-    color:var(--black);
-}
-
-.checkbox__container input{
-
-    width:25px;
-    height:25px;
-    accent-color:var(--red);
+    gap:1.5rem;
 }
 
 .form__input{
 
     width:100%;
+
     padding:1rem;
+
     border-radius:12px;
     border:1px solid var(--light-gray);
+
     font-size:1rem;
+
     outline:none;
 }
 
@@ -187,13 +236,37 @@ body{
     color:var(--light-gray);
 }
 
+.checkbox__container{
+
+    width:100%;
+
+    display:flex;
+    align-items:center;
+    gap:1rem;
+
+    font-size:1.2rem;
+    color:var(--black);
+}
+
+.checkbox__container input{
+
+    width:25px;
+    height:25px;
+
+    accent-color:var(--red);
+}
+
 .button{
+
+    width:100%;
 
     background:var(--red);
     color:var(--white);
 
     border:none;
+
     padding:1rem;
+
     border-radius:12px;
 
     font-size:1.2rem;
@@ -207,51 +280,57 @@ body{
     background:var(--black);
 }
 
-@media(min-width:768px){
-
-    .company__name{
-
-        font-size:2.5rem;
-    }
-
-    .search__title{
-
-        font-size:2.5rem;
-    }
-
-    .form__input{
-
-        font-size:1.1rem;
-    }
-}
-
-.dashboard{
+.additional__signup{
 
     width:100%;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1rem;
+
+    margin-top:2rem;
+}
+
+.nav__link,
+.forgot__link{
+
+    text-decoration:none;
+}
+
+.nav__link{
+
+    color:var(--red);
+}
+
+.forgot__link{
+
+    color:var(--dark-gray);
+}
+
+.recover__text{
+
+    width:100%;
+
+    font-size:1rem;
+    color:var(--dark-gray);
+
+    line-height:1.6;
+    text-align:center;
 }
 
 .dashboard__info{
 
+    width:100%;
+
     text-align:center;
+
     margin-bottom:3rem;
 }
 
-.dashboard__title{
-
-    font-size:2rem;
-    color:var(--black);
-    margin-bottom:1rem;
-}
-
-.dashboard__subtitle{
-
-    font-size:1.3rem;
-    font-weight:normal;
-    color:var(--dark-gray);
-    margin-bottom:1rem;
-}
-
 .dashboard__options{
+
+    width:100%;
 
     display:flex;
     flex-direction:column;
@@ -261,22 +340,28 @@ body{
 .dashboard__card{
 
     width:100%;
+
     background:var(--white);
+
     border:1px solid var(--light-gray);
     border-radius:18px;
+
     padding:1.5rem;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
+
     text-decoration:none;
-    box-shadow:0 2px 10px var(--black);
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.15);
+
     transition:0.3s;
 }
 
 .dashboard__card:hover{
 
     transform:translateY(-3px);
-    border-color:var(--red);
 }
 
 .dashboard__left{
@@ -291,15 +376,14 @@ body{
     width:55px;
     height:55px;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    flex-shrink:0;
 }
 
 .dashboard__image img{
 
     width:100%;
     height:100%;
+
     object-fit:contain;
     display:block;
 }
@@ -316,38 +400,20 @@ body{
     color:var(--dark-gray);
 }
 
-.flights{
-
-    width:100%;
-}
-
-.flights__title{
-
-    text-align:center;
-    font-size:2rem;
-    color:var(--black);
-    margin-bottom:1.5rem;
-}
-
 .flight__details{
 
     margin-bottom:2rem;
 }
 
-.flight__route{
-
-    font-size:1.2rem;
-    color:var(--dark-gray);
-    margin-bottom:0.5rem;
-}
-
+.flight__route,
 .flight__date{
 
-    font-size:1.1rem;
     color:var(--dark-gray);
 }
 
 .flights__list{
+
+    width:100%;
 
     display:flex;
     flex-direction:column;
@@ -359,14 +425,20 @@ body{
 .flight__card{
 
     width:100%;
+
     background:var(--white);
+
     border:1px solid var(--light-gray);
     border-radius:16px;
+
     padding:1rem;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
-    box-shadow:0 2px 10px var(--black));
+    gap:1rem;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.15);
 }
 
 .flight__left{
@@ -380,12 +452,15 @@ body{
 
     width:50px;
     height:50px;
+
+    flex-shrink:0;
 }
 
 .flight__image img{
 
     width:100%;
     height:100%;
+
     object-fit:contain;
     display:block;
 }
@@ -397,13 +472,9 @@ body{
     gap:0.5rem;
 }
 
-.flight__time{
-
-    font-size:1rem;
-    color:var(--dark-gray);
-}
-
-.flight__duration{
+.flight__time,
+.flight__duration,
+.flight__code{
 
     font-size:1rem;
     color:var(--dark-gray);
@@ -414,82 +485,196 @@ body{
     text-align:right;
 }
 
-.flight__code{
+.flight__price,
+.flight__status{
 
-    font-size:1rem;
+    font-size:1.5rem;
     color:var(--dark-gray);
-    margin-bottom:0.5rem;
-}
-
-.flight__price{
-
-    font-size:1.8rem;
-    color:var(--light-gray));
-}
-
-.checkin{
-
-    width:100%;
-}
-
-.checkin__title{
-
-    text-align:center;
-    font-size:2rem;
-    color:var(--black);
-    margin-bottom:2rem;
 }
 
 .checkin__form{
 
     width:100%;
+
     margin-top:2rem;
+
     background:var(--white);
+
     border:1px solid var(--light-gray);
     border-radius:16px;
+
     padding:1.5rem;
-    box-shadow:0 2px 10px color:var(--black);
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.15);
 }
 
 .checkin__subtitle{
 
+    text-align:center;
+
     font-size:1.3rem;
     color:var(--dark-gray);
-    margin-bottom:3rem;
-    text-align: center;
-}
-
-.myflights{
-
-    width:100%;
-}
-
-.myflights__title{
-
-    text-align:center;
-    font-size:2rem;
-    color:var(--black);
 
     margin-bottom:2rem;
 }
 
-.flight__status{
+@media(min-width:768px){
 
-    font-size:1.8rem;
-    color:var(--dark-gray);
+    .header{
 
-    margin-bottom:0.5rem;
-}
+        min-height:15vh;
 
-.flight__date{
+        display:flex;
+        align-items:center;
 
-    font-size:1rem;
-    color:var(--dark-gray);
-}
+        padding:2rem 4rem;
+    }
 
-.flight__route{
+    .logo__container{
 
-    font-size:1rem;
-    color:var(--dark-gray);
+        width:120px;
+    }
+
+    .company__name{
+
+        font-size:3rem;
+    }
+
+    .company__slogan{
+
+        font-size:1.2rem;
+    }
+
+    .main__body{
+
+        padding:4rem;
+    }
+
+    .login,
+    .signup,
+    .recover,
+    .search,
+    .dashboard,
+    .flights,
+    .checkin,
+    .myflights{
+
+        width:100%;
+        max-width:900px;
+    }
+
+    .search__title,
+    .dashboard__title,
+    .flights__title,
+    .myflights__title,
+    .checkin__title,
+    .signup__title,
+    .recover__title,
+    .login__title{
+
+        font-size:3rem;
+    }
+
+    .dashboard__subtitle{
+
+        font-size:1.5rem;
+    }
+
+    .form{
+
+        max-width:700px;
+        margin:auto;
+    }
+
+    .form__input{
+
+        font-size:1.15rem;
+        padding:1.2rem;
+    }
+
+    .button{
+
+        width:300px;
+        align-self:center;
+        font-size:1.2rem;
+    }
+
+    .dashboard__options{
+
+        gap:2rem;
+    }
+
+    .dashboard__card{
+
+        padding:2rem;
+    }
+
+    .dashboard__image{
+
+        width:75px;
+        height:75px;
+    }
+
+    .dashboard__text{
+
+        font-size:1.5rem;
+    }
+
+    .dashboard__arrow{
+
+        font-size:3rem;
+    }
+
+    .flight__card{
+
+        padding:2rem;
+    }
+
+    .flight__image{
+
+        width:70px;
+        height:70px;
+    }
+
+    .flight__time,
+    .flight__duration,
+    .flight__code,
+    .flight__route,
+    .flight__date{
+
+        font-size:1.15rem;
+    }
+
+    .flight__price,
+    .flight__status{
+
+        font-size:2rem;
+    }
+
+    .profile__image{
+
+        width:110px;
+        height:110px;
+    }
+
+    .user__name{
+
+        font-size:2.2rem;
+    }
+
+    .logout__link{
+
+        font-size:1.1rem;
+    }
+
+    .checkin__form{
+
+        max-width:700px;
+
+        margin-left:auto;
+        margin-right:auto;
+
+        padding:2.5rem;
+    }
 }
 
