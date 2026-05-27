@@ -69,7 +69,9 @@ body{
     width:100%;
     display:block;
     object-fit:cover;
+    filter: brightness(150);
 }
+
 
 .company__name{
 
