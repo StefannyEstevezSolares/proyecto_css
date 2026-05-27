@@ -1,0 +1,99 @@
+.loading__transition{
+
+    position:fixed;
+    inset:0;
+    background:var(--black);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    animation:
+    loading__fade 3s forwards;
+}
+
+.loading__content{
+
+    width:80%;
+    max-width:300px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:2rem;
+}
+
+.loading__image{
+
+    width:100px;
+    animation:
+    rotate__pokeball 1.5s linear infinite;
+}
+
+.loading__image img{
+
+    width:100%;
+    display:block;
+}
+
+.loading__bar{
+
+    width:100%;
+    height:15px;
+    background:var(--dark-gray);
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.loading__progress{
+
+    width:0%;
+    height:100%;
+    background:var(--red);
+    animation:
+    loading__progress 2.5s forwards;
+}
+
+@keyframes rotate__pokeball{
+
+    from{
+
+        transform:rotate(0deg);
+    }
+
+    to{
+
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes loading__progress{
+
+    from{
+
+        width:0%;
+    }
+
+    to{
+
+        width:100%;
+    }
+}
+
+@keyframes loading__fade{
+
+    0%{
+
+        opacity:1;
+    }
+
+    85%{
+
+        opacity:1;
+    }
+
+    100%{
+
+        opacity:0;
+        visibility:hidden;
+    }
+}

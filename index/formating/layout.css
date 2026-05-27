@@ -256,29 +256,7 @@ body{
     accent-color:var(--red);
 }
 
-.button{
 
-    width:100%;
-
-    background:var(--red);
-    color:var(--white);
-
-    border:none;
-
-    padding:1rem;
-
-    border-radius:12px;
-
-    font-size:1.2rem;
-    cursor:pointer;
-
-    transition:0.3s;
-}
-
-.button:hover{
-
-    background:var(--black);
-}
 
 .additional__signup{
 
@@ -292,6 +270,7 @@ body{
     margin-top:2rem;
 }
 
+.signup__title,
 .nav__link,
 .forgot__link{
 
@@ -568,7 +547,6 @@ body{
     .flights__title,
     .myflights__title,
     .checkin__title,
-    .signup__title,
     .recover__title,
     .login__title{
 
@@ -590,13 +568,6 @@ body{
 
         font-size:1.15rem;
         padding:1.2rem;
-    }
-
-    .button{
-
-        width:300px;
-        align-self:center;
-        font-size:1.2rem;
     }
 
     .dashboard__options{
