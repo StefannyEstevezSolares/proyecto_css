@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke Flights Payment</title>
+
+    <link rel="stylesheet" href="./formating/layout.css">
+    <link rel="stylesheet" href="./formating/forms.css">
+    <link rel="stylesheet" href="./formating/responsive.css">
+    <link rel="stylesheet" href="./formating/styles.css">
+</head>
+
+<body>
+
+    <section class = "loading__transition">
+        <div class = "loading__background">
+            <div class = "loading__content">
+                <div class = "loading__image">
+                    <img 
+                        src = "./images/pokeball.svg" 
+                        alt = "pokeball">
+                </div>
+                <div class = "loading__bar">
+                    <div class = "loading__progress">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class = "main__content">
+        <header class = "header">
+            <div class = "header__content">
+                <div class = "logo__container">
+                    <img 
+                        src = "./images/articuno.png" 
+                        alt = "logo">
+                </div>
+                <div class = "company__info">
+                    <h1 class = "company__name">
+                        POKE FLIGHTS
+                    </h1>
+                    <p class = "company__slogan">
+                        Flying to your dreams
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <div class = "main__body">
+            <section class = "profile">
+                <div class = "profile__image">
+                    <img 
+                        src = "./images/trainer.svg" 
+                        alt = "user">
+                </div>
+
+                <div class = "profile__info">
+                    <h2 class = "user__name">
+                        Stefanny Estevez
+                    </h2>
+                    <a 
+                        href = "signup.html"
+                        class = "logout__link">
+                        Log out
+                    </a>
+                </div>
+            </section>
+
+            <hr class = "divider">
+            <section class = "payment">
+                <h1 class = "payment__title">
+                    Make your payment
+                </h1>
+                <div class = "payment__container">
+                    <section class = "payment__summary">
+                        <h2 class = "payment__subtitle">
+                            Flight Summary
+                        </h2>
+                        <div class = "summary__card">
+                            <div class = "summary__top">
+                                <div class = "summary__image">
+                                    <img 
+                                        src = "./images/plane.png" 
+                                        alt = "plane">
+                                </div>
+                                <div class = "summary__info">
+
+                                    <p class = "summary__route">
+                                        Guatemala - Bogotá
+                                    </p>
+
+                                    <p class = "summary__date">
+                                        September 29
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "summary__details">
+                                <p class = "summary__text">
+                                    Flight: VAA025
+                                </p>
+                                <p class = "summary__text">
+                                    Departure: 05:30
+                                </p>
+
+                                <p class = "summary__text">
+                                    Arrival: 06:30
+                                </p>
+                            </div>
+                            <div class = "summary__price">
+                                TOTAL: $350
+                            </div>
+                        </div>
+                    </section>
+                    <section class = "payment__form">
+                        <h2 class = "payment__subtitle">
+                            Card Information
+                        </h2>
+                        <form 
+                            class = "form"
+                            autocomplete = "off">
+
+                            <input
+                                type = "text"
+                                placeholder = "Card Holder"
+                                class = "form__input"
+                                required>
+
+                            <input
+                                type = "text"
+                                placeholder = "Card Number"
+                                class = "form__input"
+                                required>
+
+                            <div class = "payment__row">
+
+                                <input
+                                    type = "text"
+                                    placeholder = "MM/YY"
+                                    class = "form__input"
+                                    required>
+
+                                <input
+                                    type = "text"
+                                    placeholder = "CVV"
+                                    class = "form__input"
+                                    required>
+
+                            </div>
+
+                            <input
+                                type = "email"
+                                placeholder = "Billing E-mail"
+                                class = "form__input"
+                                required>
+
+                            <a 
+                                href = "./main_menu.html" 
+                                class = "button">
+                                PROCESS PAYMENT
+                            </a>
+                        </form>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

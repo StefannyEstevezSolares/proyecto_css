@@ -43,3 +43,30 @@
         font-size:1.25rem;
     }
 }
+
+@media(min-width:768px){
+
+    .payment__title{
+
+        font-size:3rem;
+    }
+
+    .payment__container{
+
+        display:grid;
+        grid-template-columns:1fr 1fr;
+
+        align-items:start;
+    }
+
+    .payment__summary,
+    .payment__form{
+
+        height:100%;
+    }
+
+    .summary__price{
+
+        font-size:2.5rem;
+    }
+}
