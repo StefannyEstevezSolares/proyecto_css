@@ -70,3 +70,271 @@
         font-size:2.5rem;
     }
 }
+
+@media(min-width:768px){
+
+    .header{
+
+        min-height:15vh;
+
+        display:flex;
+        align-items:center;
+
+        padding:2rem 4rem;
+    }
+
+    .logo__container{
+
+        width:120px;
+    }
+
+    .company__name{
+
+        font-size:3rem;
+    }
+
+    .company__slogan{
+
+        font-size:1.2rem;
+    }
+
+    .main__body{
+
+        padding:4rem;
+    }
+
+    .login,
+    .signup,
+    .recover,
+    .search,
+    .dashboard,
+    .flights,
+    .checkin,
+    .myflights{
+
+        width:100%;
+        max-width:900px;
+    }
+
+    .search__title,
+    .dashboard__title,
+    .flights__title,
+    .myflights__title,
+    .checkin__title,
+    .recover__title,
+    .login__title{
+
+        font-size:3rem;
+    }
+
+    .dashboard__subtitle{
+
+        font-size:1.5rem;
+    }
+
+    .form{
+
+        max-width:700px;
+        margin:auto;
+    }
+
+    .form__input{
+
+        font-size:1.15rem;
+        padding:1.2rem;
+    }
+
+    .dashboard__options{
+
+        width:100%;
+
+        display:grid;
+        grid-template-columns:1fr 1fr;
+
+        gap:2rem;
+    }
+
+    .dashboard__card{
+
+        min-height:220px;
+
+        padding:1.5rem;
+
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        text-align:center;
+
+        gap:2rem;
+    }
+
+    .dashboard__left{
+
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        gap:1rem;
+    }
+
+    .dashboard__image{
+
+        width:75px;
+        height:75px;
+    }
+
+    .dashboard__text{
+
+        font-size:1.5rem;
+    }
+
+    .dashboard__arrow{
+
+        display:none;
+    }
+
+    .flight__card{
+
+        padding:2rem;
+    }
+
+    .flight__image{
+
+        width:70px;
+        height:70px;
+    }
+
+    .flight__time,
+    .flight__duration,
+    .flight__code,
+    .flight__route,
+    .flight__date{
+
+        font-size:1.15rem;
+    }
+
+    .flight__price,
+    .flight__status{
+
+        font-size:2rem;
+    }
+
+    .profile__image{
+
+        width:110px;
+        height:110px;
+    }
+
+    .user__name{
+
+        font-size:2.2rem;
+    }
+
+    .logout__link{
+
+        font-size:1.1rem;
+    }
+
+    .checkin__form{
+
+        max-width:700px;
+
+        margin-left:auto;
+        margin-right:auto;
+
+        padding:2.5rem;
+    }
+
+    .payment__title{
+
+        font-size:3rem;
+    }
+
+    .payment__container{
+
+        display:grid;
+        grid-template-columns:1fr 1fr;
+
+        align-items:start;
+    }
+
+    .payment__summary,
+    .payment__form{
+
+        height:100%;
+    }
+
+    .summary__price{
+
+        font-size:2.5rem;
+    }
+}
+
+@media(min-width:1200px){
+
+    .header{
+
+        padding:2rem 8rem;
+    }
+
+    .main__body{
+
+        padding:5rem 8rem;
+    }
+
+    .login,
+    .signup,
+    .recover,
+    .search,
+    .dashboard,
+    .flights,
+    .checkin,
+    .myflights{
+
+        max-width:1200px;
+    }
+
+    .dashboard__options{
+
+        grid-template-columns:
+        repeat(3,1fr);
+
+        gap:3rem;
+    }
+
+    .dashboard__card{
+
+        min-height:280px;
+
+        padding:1.5rem;
+
+        border-radius:22px;
+    }
+
+    .dashboard__image{
+
+        width:100px;
+        height:100px;
+    }
+
+    .dashboard__text{
+
+        font-size:1.8rem;
+    }
+
+    .form{
+
+        max-width:800px;
+    }
+
+    .form__input{
+
+        font-size:1.25rem;
+    }
+
+    .button{
+
+        font-size:1.25rem;
+    }
+}

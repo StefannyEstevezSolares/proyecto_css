@@ -256,8 +256,6 @@ body{
     accent-color:var(--red);
 }
 
-
-
 .additional__signup{
 
     width:100%;
@@ -497,158 +495,6 @@ body{
     margin-bottom:2rem;
 }
 
-@media(min-width:768px){
-
-    .header{
-
-        min-height:15vh;
-
-        display:flex;
-        align-items:center;
-
-        padding:2rem 4rem;
-    }
-
-    .logo__container{
-
-        width:120px;
-    }
-
-    .company__name{
-
-        font-size:3rem;
-    }
-
-    .company__slogan{
-
-        font-size:1.2rem;
-    }
-
-    .main__body{
-
-        padding:4rem;
-    }
-
-    .login,
-    .signup,
-    .recover,
-    .search,
-    .dashboard,
-    .flights,
-    .checkin,
-    .myflights{
-
-        width:100%;
-        max-width:900px;
-    }
-
-    .search__title,
-    .dashboard__title,
-    .flights__title,
-    .myflights__title,
-    .checkin__title,
-    .recover__title,
-    .login__title{
-
-        font-size:3rem;
-    }
-
-    .dashboard__subtitle{
-
-        font-size:1.5rem;
-    }
-
-    .form{
-
-        max-width:700px;
-        margin:auto;
-    }
-
-    .form__input{
-
-        font-size:1.15rem;
-        padding:1.2rem;
-    }
-
-    .dashboard__options{
-
-        gap:2rem;
-    }
-
-    .dashboard__card{
-
-        padding:2rem;
-    }
-
-    .dashboard__image{
-
-        width:75px;
-        height:75px;
-    }
-
-    .dashboard__text{
-
-        font-size:1.5rem;
-    }
-
-    .dashboard__arrow{
-
-        font-size:3rem;
-    }
-
-    .flight__card{
-
-        padding:2rem;
-    }
-
-    .flight__image{
-
-        width:70px;
-        height:70px;
-    }
-
-    .flight__time,
-    .flight__duration,
-    .flight__code,
-    .flight__route,
-    .flight__date{
-
-        font-size:1.15rem;
-    }
-
-    .flight__price,
-    .flight__status{
-
-        font-size:2rem;
-    }
-
-    .profile__image{
-
-        width:110px;
-        height:110px;
-    }
-
-    .user__name{
-
-        font-size:2.2rem;
-    }
-
-    .logout__link{
-
-        font-size:1.1rem;
-    }
-
-    .checkin__form{
-
-        max-width:700px;
-
-        margin-left:auto;
-        margin-right:auto;
-
-        padding:2.5rem;
-    }
-}
-
 .payment{
 
     width:100%;
@@ -799,3 +645,8 @@ body{
     text-decoration:none;
 }
 
+.signup__link{
+
+    font-size:1.2rem;
+    font-weight:normal;
+}
