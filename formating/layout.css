@@ -314,7 +314,8 @@ body{
     gap:1.5rem;
 }
 
-.dashboard__card{
+.dashboard__card
+{
 
     width:100%;
 
@@ -336,9 +337,62 @@ body{
     transition:0.3s;
 }
 
+
+.dashboard__card1
+ {
+
+    width:100%;
+    background: var(--white);
+    border:1px solid gold;
+    border-radius:18px;
+    padding:1.5rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    box-shadow:0 2px 15px rgba(255, 217, 0, 0.432);
+    transition:0.3s;
+}
+
+
+.dashboard__card2{
+    width:100%;
+    background: var(--white);
+    border:1px solid silver;
+    border-radius:18px;
+    padding:1.5rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    box-shadow:0 2px 15px rgb(125, 138, 179);
+    transition:0.3s;
+}
+
+.dashboard__card3{
+
+    width:100%;
+    background: var(--white);
+    border:1px solid rgb(223, 135, 81);
+    border-radius:18px;
+    padding:1.5rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    box-shadow:0 2px 15px rgba(238, 165, 109, 0.432);
+    transition:0.3s;
+}
+
+
+
+.dashboard__card1:hover,
+.dashboard__card2:hover,
+.dashboard__card3:hover, 
 .dashboard__card:hover{
 
-    transform:translateY(-3px);
+    transform:translateY(-10px);
+    
 }
 
 .dashboard__left{
@@ -352,15 +406,14 @@ body{
 
     width:55px;
     height:55px;
-
     flex-shrink:0;
+
 }
 
 .dashboard__image img{
 
     width:100%;
     height:100%;
-
     object-fit:contain;
     display:block;
 }
@@ -369,6 +422,13 @@ body{
 
     font-size:1.2rem;
     color:var(--dark-gray);
+}
+
+.list__benefits{
+
+    font-size:0.75rem;
+    color:var(--dark-gray)
+
 }
 
 .dashboard__arrow{
@@ -649,4 +709,165 @@ body{
 
     font-size:1.2rem;
     font-weight:normal;
+}
+
+-----------------------------
+
+.logo__container{
+
+    width:clamp(
+        50px,
+        10vw,
+        140px
+    );
+}
+
+.company__name{
+
+    font-size:clamp(
+        1rem,
+        4vw,
+        3rem
+    );
+}
+
+.company__slogan{
+
+    font-size:clamp(
+        0.7rem,
+        2vw,
+        1.2rem
+    );
+}
+
+.profile__image{
+
+    width:clamp(
+        60px,
+        10vw,
+        120px
+    );
+
+    height:clamp(
+        60px,
+        10vw,
+        120px
+    );
+}
+
+.search__title,
+.dashboard__title,
+.flights__title,
+.myflights__title,
+.checkin__title,
+.recover__title,
+.login__title,
+.payment__title{
+
+    font-size:clamp(
+        1.2rem,
+        5vw,
+        3rem
+    );
+}
+
+.dashboard__subtitle{
+
+    font-size:clamp(
+        0.8rem,
+        2vw,
+        1.5rem
+    );
+}
+
+.dashboard__image{
+
+    width:clamp(
+        35px,
+        8vw,
+        100px
+    );
+
+    height:clamp(
+        35px,
+        8vw,
+        100px
+    );
+}
+
+.dashboard__text{
+
+    font-size:clamp(
+        0.8rem,
+        2vw,
+        1.8rem
+    );
+}
+
+.form__input{
+
+    font-size:clamp(
+        0.8rem,
+        2vw,
+        1.25rem
+    );
+
+    padding:clamp(
+        0.7rem,
+        2vw,
+        1.2rem
+    );
+}
+
+.button{
+
+    font-size:clamp(
+        0.8rem,
+        2vw,
+        1.25rem
+    );
+
+    padding:clamp(
+        0.7rem,
+        2vw,
+        1.2rem
+    );
+}
+
+.flight__image{
+
+    width:clamp(
+        35px,
+        8vw,
+        100px
+    );
+
+    height:clamp(
+        35px,
+        8vw,
+        100px
+    );
+}
+
+.flight__time,
+.flight__duration,
+.flight__code,
+.flight__route,
+.flight__date{
+
+    font-size:clamp(
+        0.7rem,
+        2vw,
+        1.15rem
+    );
+}
+
+.flight__price,
+.flight__status{
+
+    font-size:clamp(
+        1rem,
+        3vw,
+        2rem
+    );
 }
